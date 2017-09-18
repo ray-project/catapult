@@ -580,7 +580,7 @@ Polymer({
   },
 
   onMouseWheel_(e) {
-    if (!e.altKey) return;
+    if (e.altKey) return;
 
     const delta = e.wheelDelta / 120;
     const zoomScale = Math.pow(1.5, delta);
